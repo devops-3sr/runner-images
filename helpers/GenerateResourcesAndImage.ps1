@@ -293,7 +293,7 @@ Function GenerateResourcesAndImage {
             -var "install_password=$($InstallPassword)" `
             -var "allowed_inbound_ip_addresses=$($AgentIp)" `
             $builderScriptPath
-        Write-Host "TEMP DEUB :: Packer Exit code is --> $LASTEXITCODE"
+        Write-Host "TEMP DEBUG :: Packer Exit code is --> $LASTEXITCODE"
     }
     catch {
         Write-Error $_
